@@ -18,6 +18,7 @@ def fib(n, k):
 		return 0
 	else:
 		for i in range(1, n):
+			# F(n) = k*F(n-2) + F(n-1)
 			newFib = k*previousFib + currentFib
 			previousFib = currentFib
 			currentFib = newFib
